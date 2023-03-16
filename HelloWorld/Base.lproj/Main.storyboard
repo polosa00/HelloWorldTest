@@ -23,17 +23,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sq-Z3-GWe">
-                                <rect key="frame" x="78.666666666666686" y="570.66666666666663" width="236" height="43"/>
+                                <rect key="frame" x="78.666666666666686" y="572.66666666666663" width="236" height="41"/>
+                                <color key="backgroundColor" red="0.62468183040618896" green="0.1508653461933136" blue="0.092028088867664337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="236" id="N9e-P4-hQM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Show Greeting" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
-                                </buttonConfiguration>
+                                <state key="normal" title="Show Greeting">
+                                    <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="grettingButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNK-Gx-FhJ"/>
+                                    <action selector="greetingButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="esN-qn-Yb6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,6 +49,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="greetingButton" destination="3Sq-Z3-GWe" id="UOx-0R-E99"/>
                         <outlet property="greetingLabel" destination="bzp-VW-GpM" id="VyS-Un-N2m"/>
                     </connections>
                 </viewController>
