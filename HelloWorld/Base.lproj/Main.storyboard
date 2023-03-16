@@ -16,25 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhJ-yg-iLJ">
-                                <rect key="frame" x="16" y="408.66666666666669" width="361" height="35"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzp-VW-GpM">
+                                <rect key="frame" x="16" y="195" width="361" height="46.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sq-Z3-GWe">
+                                <rect key="frame" x="78.666666666666686" y="570.66666666666663" width="236" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="236" id="N9e-P4-hQM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Greeting" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="grettingButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNK-Gx-FhJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhJ-yg-iLJ" secondAttribute="trailing" constant="16" id="cYx-D4-zlp"/>
-                            <constraint firstItem="ZhJ-yg-iLJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mGW-ZK-JAo"/>
-                            <constraint firstItem="ZhJ-yg-iLJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nUj-Ib-b7e"/>
+                            <constraint firstItem="bzp-VW-GpM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1H0-LO-vUF"/>
+                            <constraint firstItem="3Sq-Z3-GWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HdC-hA-QUE"/>
+                            <constraint firstItem="bzp-VW-GpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="IQl-HP-UqA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzp-VW-GpM" secondAttribute="trailing" constant="16" id="jgk-gd-3O3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Sq-Z3-GWe" secondAttribute="bottom" multiplier="4:3" id="op8-TH-6Ze"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="bzp-VW-GpM" id="VyS-Un-N2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
